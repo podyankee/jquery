@@ -2,7 +2,7 @@ $text-color: #333;
 $dark-color: #000;
 $red-color: #981818;
 $blue-color: #003469;
-$blue-color: #67bc5c;
+$green-color: #67bc5c;
 
 body {
   font-family: "RobotoRegular", sans-serif;
@@ -11,4 +11,6 @@ body {
   font-size: 16px;
  }
 
-
+.special {
+	color: $green-color;
+}
