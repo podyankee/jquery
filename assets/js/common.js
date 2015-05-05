@@ -8,9 +8,16 @@ $(function() {
 	//$('#btn1').on('mouseover', function(){
 		//$('#panel1').slideToggle(200);
 	//});
-	$('#btn1').on('click', function(){
-		$('#panel1 .panel-body').html('my new panel content');
-	});
+	
+	var content = "My new awesome content.";
+	
+	$('.panel-button').on('click', function(){
+		var panelId = $(this).attr('id');
+	//alert(panelId);
+	$('#'+panelId).toggle();
+	$('#'+panelId+' .panel-body').html('');
+		 });
+	
 	});  
 
  
